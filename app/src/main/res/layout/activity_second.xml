@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAmount"
+        android:textSize="50sp"
+        android:text="100000"/>
+    <SeekBar
+        android:id="@+id/seekBarOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="500000"
+        android:progress="100000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewInterestRate"
+        android:textSize="50sp"
+        android:text="10"/>
+    <SeekBar
+        android:id="@+id/seekBarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:min="5"
+        android:progress="10"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLoanTenure"
+        android:textSize="50sp"
+        android:text="15"/>
+
+    <SeekBar
+        android:id="@+id/seekBarThree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:min="1"
+        android:max="30"
+        android:progress="15"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAnswer"
+        android:textSize="30sp"/>
+</LinearLayout>

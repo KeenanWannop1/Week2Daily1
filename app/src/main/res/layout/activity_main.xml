@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pictureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dispatchTakePictureIntent"
+        android:text="Take Picture" />
+
+    <Button
+        android:id="@+id/sendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendText"
+        android:text="Send Text" />
+
+    <Button
+        android:id="@+id/Call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callPhone"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/emiCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartSecond"
+        android:text="EMI Calculator" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPersonName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPersonAge"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartThird"
+        android:text="Person"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createList"
+        android:text="Add values to Person"/>
+
+</LinearLayout>
